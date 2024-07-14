@@ -1,0 +1,24 @@
++ de 4 joueurs
+rename les villes 
+full custom les cartes
+trade entre joueurs
+case d'epargne
+anti hotel 
+
+
+Cartes:
+Meteorites
+player swap
+
+
+Cases:
+	
+	Corner:
+		Depart
+		L'île (iniiurgfyerfehfgueifygeuhfuerfpppwpwpwpwpwpwpwpwpowowowowoowo)
+		avion 
+		bank: vole la thune -> si pas d'argent == prison
+		
+		trains
+		impot (sur les les propriete)
+		taxe (sur le cash)

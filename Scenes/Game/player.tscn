@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bibghalv2aeke"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_ua7rr"]
+[ext_resource type="Texture2D" uid="uid://dk176bl3ppmo8" path="res://Assets/Characters/Alien sprites/alienBeige.png" id="2_b3lpc"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_so3cf"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ua7rr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(33, 45)
+texture = ExtResource("2_b3lpc")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_so3cf")
