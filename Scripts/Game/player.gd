@@ -15,6 +15,14 @@ func _init(name, money = 100, properties: Array[Property] = [], index = 0):
 
 ### Methods ###
 
+func display():
+	print("--- Player " + player_name + " ---");
+	print("Money: " + str(money) + "$");
+	print("At: " + str(board_index));
+	for prop in properties:
+		prop.display();
+	return;
+
 func buy(property: Property):
 	if property.landlord != null:
 		printerr("Player: buy: " + player_name + " can't buy " + property.property_name + "! Already Have Landlord");

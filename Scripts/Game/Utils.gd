@@ -6,4 +6,4 @@ func _ready():
 
 
 static func throw_die():
-	return randi() % 6;
+	return (randi() % 6) + 1;

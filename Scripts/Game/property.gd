@@ -19,6 +19,16 @@ func _init(pname, prices = [], family = null, landlord = null, level = 0, upgrad
 
 ### Methods ###
 
+func display():
+	print("----");
+	print("Name: " + property_name);
+	#print("Family number: ", family.id);
+	print("Landlord: ", "none" if landlord == null else landlord.player_name);
+	print("Level: ", level);
+	print("Prices: ", prices);
+	print("Upgrades: ", upgrade_prices);
+	return;
+
 func cost():
 	return prices[level];
 
